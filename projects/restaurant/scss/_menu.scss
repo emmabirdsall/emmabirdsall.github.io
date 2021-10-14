@@ -1,0 +1,47 @@
+.menu__header {
+    background: url("../img/menu.jpg") no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.menu {
+    position: relative;
+    border: 10px solid black;
+    font-family: $menu-font;
+    color: black;
+
+    &::before {
+        content: "";
+        background-image: url("../img/burnt.jpg");
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.65;
+    }
+
+    &__section {
+       position: relative;
+       text-align: center;
+    }
+
+    &__title {
+        position: relative;
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+
+        &--bold {
+            font-weight: bold;
+        }
+    }
+
+    &__item {
+        line-height: 1.2em;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+}
+
+

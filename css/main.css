@@ -1,0 +1,536 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.header {
+  background: url(../img/skyline-blur.jpg) no-repeat center;
+  background-size: cover;
+  height: 110vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.header__title {
+  text-transform: uppercase;
+  margin-bottom: 5%;
+  padding-left: 3%;
+  color: white;
+  width: 85%;
+}
+
+.nav-icon {
+  padding-left: 3%;
+}
+
+.nav-icon__icon {
+  padding-right: 7%;
+  color: white;
+}
+
+.nav__wrapper {
+  position: relative;
+  background-color: white;
+  padding: 6vh;
+}
+
+.nav {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  background: white;
+  height: 0px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__item {
+  display: block;
+  padding: 1.6em 5.2em;
+  border-bottom: 1px solid #B8A07E;
+}
+
+.nav__item:last-child {
+  border-bottom: none;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #B8A07E;
+  text-transform: uppercase;
+}
+
+.nav__link:hover, .nav__link:focus {
+  text-decoration: underline;
+}
+
+.nav--open {
+  height: auto;
+}
+
+.menu-toggle {
+  padding: 1em;
+  position: absolute;
+  right: 1em;
+  bottom: 25%;
+  cursor: pointer;
+}
+
+.hamburger {
+  background: #B8A07E;
+  height: 2px;
+  width: 1.25em;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+}
+
+.hamburger::before {
+  content: '';
+  display: block;
+  background: #B8A07E;
+  height: 2px;
+  width: 1.25em;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  content: '';
+  display: block;
+  background: #B8A07E;
+  height: 2px;
+  width: 1.25em;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+  transform: translateY(4px);
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  transform: translateY(-2px) rotate(-90deg);
+}
+
+.swiper {
+  width: 93%;
+}
+
+.swiper-wrapper {
+  list-style: none;
+  padding-left: 3%;
+}
+
+.swiper-icon {
+  color: #B8A07E;
+}
+
+.swiper-pagination {
+  position: static;
+  padding-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+  border: solid 2px #B8A07E;
+  margin: .75em;
+  border-radius: 300px;
+  width: .75em;
+  height: .75em;
+  text-indent: -9999px;
+  transition: all .3s ease-in;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet:hover {
+  border-color: #B8A07E;
+  background-color: #B8A07E;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #B8A07E;
+  border: solid 2px #B8A07E;
+  --swiper-theme-color: $gold;
+}
+
+.slides__title {
+  margin-top: 3%;
+}
+
+.slides__text {
+  color: #778899;
+  margin-top: 3%;
+}
+
+.portfolio {
+  padding-top: 20vh;
+  text-align: center;
+  width: 100%;
+}
+
+.portfolio__header {
+  text-transform: uppercase;
+  padding-bottom: 20vh;
+}
+
+.flex__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.box-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 350px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.box-wrapper__video {
+  width: 350px;
+  height: 315px;
+}
+
+.box-wrapper__text {
+  width: 275px;
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+  font-size: smaller;
+  position: relative;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.box-wrapper__text:before, .box-wrapper__text:after {
+  position: absolute;
+  z-index: -1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  border-radius: 100px / 10px;
+}
+
+.box-wrapper--last {
+  padding-bottom: 10vh;
+}
+
+.video-link {
+  height: 315px;
+}
+
+.form1 {
+  margin-right: 3%;
+  margin-top: 20px;
+  padding-bottom: 15vh;
+}
+
+.form1__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form1__label {
+  padding-bottom: 0.7em;
+}
+
+.form1__input {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  width: 95%;
+  border: 2px solid #778899;
+  background-color: #F5F5F5;
+}
+
+.form1__button {
+  background-color: #303030;
+  color: white;
+  width: 95%;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.form1__button:hover {
+  cursor: pointer;
+}
+
+.resume {
+  background-color: #B8A07E;
+  text-align: center;
+  padding: 20px 10px 20px 10px;
+}
+
+.resume__header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.resume__header--alt {
+  border: 2px solid white;
+  padding: 5px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resume__wrapper {
+  margin-top: 20px;
+}
+
+.resume__text {
+  padding-top: 10px;
+}
+
+.resume__list {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.resume__footer {
+  background-color: #B8A07E;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.resume__links {
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.resume__links:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.contact__address, .resume__list, .resume__wrapper--alt {
+  padding: 20px;
+}
+
+#work {
+  padding-top: 15vh;
+}
+
+.work__header {
+  border: 2px solid #B8A07E;
+  padding: 5px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jobs {
+  padding: 20px 20px 0px 20px;
+  margin-bottom: 20px;
+}
+
+.jobs__header {
+  margin-bottom: 5px;
+}
+
+.skills {
+  background-color: #F5F5F5;
+  padding-bottom: 20vh;
+}
+
+.skills__text {
+  color: #778899;
+  font-family: 'Amatic SC', cursive;
+  font-size: x-large;
+  font-weight: bold;
+  padding-left: 6%;
+  padding-right: 8px;
+  padding-bottom: 5%;
+  line-height: 1.2em;
+}
+
+.skills__wrapper {
+  margin-top: 10%;
+  padding-right: 2%;
+}
+
+.skills__header {
+  text-align: center;
+  padding-bottom: 10vh;
+}
+
+.about {
+  padding-bottom: 10vh;
+}
+
+.headshot {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 15px solid #B8A07E;
+}
+
+.headshot__wrapper {
+  padding-top: 30%;
+}
+
+#get-in-touch {
+  padding-top: 15vh;
+  background-color: #F5F5F5;
+  padding-left: 3%;
+}
+
+.contact__header {
+  text-transform: uppercase;
+  padding-bottom: 5%;
+}
+
+.contact__address {
+  font-style: normal;
+}
+
+.contact__text {
+  padding-bottom: 0.7em;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: auto;
+}
+
+.footer__item {
+  width: 40%;
+}
+
+.footer__icon {
+  padding-left: 3%;
+  color: #778899;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  .header__title {
+    margin-bottom: 3%;
+  }
+  .headshot {
+    width: 65%;
+  }
+  .headshot__wrapper {
+    padding-top: 15%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+  .headshot {
+    max-width: 65%;
+  }
+  .headshot__wrapper {
+    padding-top: 15%;
+  }
+  .swiper-pagination {
+    padding-top: 30px;
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer__item {
+    align-content: center;
+    padding-top: 15px;
+  }
+  .portfolio__header {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .headshot {
+    max-width: 60%;
+  }
+  .headshot__wrapper {
+    padding-top: 15%;
+  }
+  #get-in-touch {
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr 40px;
+  }
+  .item_1 {
+    grid-column: 2/3;
+    padding-top: 15px;
+  }
+  .item_2 {
+    grid-column: 3/4;
+    width: 90%;
+  }
+  .swiper-pagination {
+    padding-top: 40px;
+  }
+  .flex__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .flex__container2 {
+    display: flex;
+    width: 100%;
+  }
+  .column_1 {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .resume__footer {
+    background-color: white;
+  }
+  .resume__links--footer {
+    color: #B8A07E;
+  }
+  .resume__links--header {
+    padding-left: 3px;
+  }
+  .resume__text, .resume__schools {
+    text-align: left;
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer__item {
+    align-content: center;
+    padding-top: 15px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

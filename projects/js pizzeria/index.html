@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Pizzeria</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="heading">
+        <h1 class="heading__title">Welcome to the JavaScript Pizzeria!</h1>
+        <ul class="nav">
+             <li class="nav__item"><a href="#menu">Menu</a></li>
+            <li class="nav__item"><a href="#order-form">Order Form</a></li>
+        </ul>
+    </header>
+    
+    <main>
+        <div class="menu-wrapper">
+            <h2 id="menu">Menu</h2>
+            <div class="food-wrapper">
+                <h3 class="menu__header">Pizza</h3>
+                <p class="menu__section" id="pizza"></p>
+                <h4 class="menu__section--sub">Toppings</h4>
+                <p class="menu__section" id="toppings"></p>
+            <h3 class="menu__header">Sides</h3>
+                <p class="menu__section" id="sides"></p>
+            <h3 class="menu__header">Drinks</h3>
+                <p class="menu__section" id="drinks"></p>
+            </div><!--End food wrapper-->
+        </div><!--End menu wrapper-->
+
+        <form action="" id="order-form">
+            <fieldset class="form-wrapper">
+                <legend class="order-form__title">Order Form</legend>
+                
+                <label class="order-form__label"><input type="checkbox" name="pizza-choice" value="slice of pizza" class="pizza-check"/>Slice of Pizza $2.00</label><br />
+                
+                <h3 class="order-form__heading">Toppings</h3>
+                <label class="order-form__label"><input type="checkbox" name="topping-choice" value="pepperoni" class="topping-check">Pepperoni $.25</label><br />
+                <label class="order-form__label"><input type="checkbox" name="topping-choice" value="meatballs" class="topping-check">Meatballs $.35</label><br />
+                <label class="order-form__label"><input type="checkbox" name="topping-choice" value="mushrooms" class="topping-check">Mushrooms $.40</label><br />
+                <label class="order-form__label"><input type="checkbox" name="topping-choice" value="olives" class="topping-check">Olives $.20</label><br />
+                
+                <h3 class="order-form__heading">Sides</h3>
+                <label class="order-form__label"><input type="checkbox" name="side-choice" value="potato salad" class="sides-check"/>Potato Salad $1.25</label><br />
+                <label class="order-form__label"><input type="checkbox" name="side-choice" value="hummus" class="sides-check"/>Hummus $2.50</label><br />
+                <label class="order-form__label"><input type="checkbox" name="side-choice" value="caesar salad" class="sides-check"/>Caesar Salad $3.50</label><br />
+                <label class="order-form__label"><input type="checkbox" name="side-choice" value="garden salad" class="sides-check"/>Garden Salad $2.25</label><br />
+                
+                <h3 class="order-form__heading">Drinks</h3>
+                <label class="order-form__label"><input type="checkbox" name="drink-choice" value="small soda" class="drink-check" />Small Soda $1.95</label><br />
+                <label class="order-form__label"><input type="checkbox" name="drink-choice" value="medium soda" class="drink-check" ></label>Medium Soda $2.20<br />
+                <label class="order-form__label"><input type="checkbox" name="drink-choice" value="large soda" class="drink-check" ></label>Large Soda $2.50<br />
+                <label class="order-form__label"><input type="checkbox" name="drink-choice" value="juice" class="drink-check" >Juice $2.00</label><br />
+                <label class="order-form__label"><input type="checkbox" name="drink-choice" value="water" class="drink-check" >Water $1.25</label><br />
+                <input type="submit" name="submit" value="Submit" class="submit-btn"/>
+            </fieldset>
+        </form>
+
+        <section>
+            <i class="fas fa-pizza-slice fa-7x order-icon1"></i>
+            <i class="fas fa-pizza-slice fa-7x order-icon2"></i>
+            <i class="fas fa-pizza-slice fa-7x order-icon3"></i>
+            <i class="fas fa-pizza-slice fa-7x order-icon4"></i>
+            <i class="fas fa-pizza-slice fa-7x order-icon5"></i>
+            <i class="fas fa-pizza-slice fa-7x order-icon6"></i>
+            <i class="fas fa-pizza-slice fa-7x order-icon7"></i>
+            <i class="fas fa-pizza-slice fa-7x order-icon8"></i>
+        </section>
+
+        <section class="order-wrapper">
+            <h4>Want to see what you just ordered?</h4>
+            <p>Click the below button to see what you ordered.</p>
+            <button type="submit" id="display-order" class="submit-btn">See Your Order</button>
+            <p id="user-order"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Like my pizza background photo? Click the following link to get it!</p>
+        <a class="attribute" href='https://www.freepik.com/vectors/background'>Background vector created by nizovatina - www.freepik.com</a>
+    </footer>
+
+    <!--Script to load jQuery from CDN-->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <!--Script to load local jQuery if CDN fails-->
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-3.6.0.js"><\/script>')
+    </script>
+    <!--JS file-->
+    <script src="js/script.js"></script>
+    <!--Script for font awesome icons-->
+    <script src="https://kit.fontawesome.com/f52d19676e.js" crossorigin="anonymous"></script>
+</body>
+</html>

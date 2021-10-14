@@ -1,0 +1,53 @@
+.portfolio {
+    padding-top: 20vh;
+    text-align: center;
+    width: 100%;
+
+    &__header {
+        text-transform: uppercase;
+        padding-bottom: 20vh;
+    }
+}
+
+.flex__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 350px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    &__video {
+        width: 350px;
+        height: 315px;
+    }
+
+    &__text {
+        width: 275px;
+        background-color: #FFFFFF;
+        text-align: center;
+        padding: 20px;
+        font-size: smaller;
+        @include box-shadow-parent;
+
+        &:before, &:after {
+            @include box-shadow-child;
+        }
+    }
+
+    &--last {
+        padding-bottom: 10vh;
+    }
+}
+
+.video-link {
+    height: 315px;
+}

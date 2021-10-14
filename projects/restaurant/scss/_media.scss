@@ -1,0 +1,193 @@
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    
+    //Universal styles
+    h1#top {
+        font-size: 48px;
+    }
+
+    .nav__link {
+        font-size: 19px;
+    }
+
+    //Home page styles
+    .quip__text {
+        font-size: 32px;
+        padding: 20px;
+    }
+
+    .home__item--1 {
+        font-size: 20px;
+    }
+
+    //Menu styles
+    .menu {
+        padding: 20px;
+    }
+  
+    //About styles
+
+    .flex-wrapper {
+        margin-top: 15px;
+    }
+
+    .about__header {
+        font-size: 34px;
+    }
+
+    .page__text {
+        padding: 30px;
+    }
+
+    .shamrock-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .song {
+        padding: 80px;
+        text-align: center;
+
+        &__video {
+            width: 500px;
+            height: 300px;
+        }
+    }
+
+    .photo__wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photo__image {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    //Contact page 
+    .info__map {
+        width: 330px;
+        height: 220px;
+    }
+
+    #contact {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form {
+        max-width: 375px;
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+}
+ 
+@media only screen and (min-width: 961px) {
+    
+    //Universal styles
+    h1#top {
+        font-size: 56px;
+    }
+
+    .nav__link {
+        font-size: 24px;
+    }
+  
+    //Home page styles
+    .quip__text {
+        font-size: 36px;
+        padding: 30px;
+    }
+
+    .home__item--1 {
+        font-size: 26px;
+    }
+
+    //Menu styles
+    .menu {
+  
+        &__section {
+            display: grid;
+            position: relative;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-gap: 15px 15px;
+            padding: 10px;
+        }
+    
+        &__title {
+            grid-column: 1/4;
+            justify-self: center;
+            align-self: center;
+            font-size: 32px;
+            text-transform: uppercase;
+            border: 5px double black;
+            padding: 15px;
+        }
+    }
+
+    //About styles
+
+    .flex-wrapper {
+        margin-top: 30px;
+    }
+
+    .about__header {
+        font-size: 48px;
+    }
+
+    .shamrock-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .page__text {
+        font-size: 18px;
+        padding: 50px;
+    }
+
+    .song {
+        display: flex;
+        align-items: center;
+
+        &__lyrics {
+            width: 55%;
+        }
+
+        &__video {
+            width: 500px;
+            height: 300px;
+        }
+    }
+
+    .photo__wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photo__image {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    //Contact page 
+    .info__map {
+        width: 530px;
+        height: 420px;
+    }
+
+    #contact {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form {
+        max-width: 600px;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+}
+  

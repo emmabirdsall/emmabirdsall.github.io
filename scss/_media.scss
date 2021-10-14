@@ -1,0 +1,129 @@
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+
+    .header__title {
+        margin-bottom: 3%;
+    }
+
+    .headshot {
+        width: 65%;
+
+        &__wrapper {
+            padding-top: 15%;
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+
+    .headshot {
+        max-width: 65%;
+
+        &__wrapper {
+            padding-top: 15%;
+        }
+    }
+
+    .swiper-pagination {
+        padding-top: 30px;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        &__item {
+            align-content: center;
+            padding-top: 15px;
+        }
+    }
+
+    .portfolio__header {
+        font-size: 36px;
+    }
+
+}
+
+
+@media only screen and (min-width: 961px) {
+
+    .headshot {
+        max-width: 60%;
+
+        &__wrapper {
+            padding-top: 15%;
+        }
+    }
+
+    #get-in-touch {
+        display: grid;
+        grid-template-columns: 40px 1fr 1fr 40px;
+        //justify-items: center;
+    }
+
+    .item_1 {
+        grid-column: 2/3;
+        padding-top: 15px;
+    }
+
+    .item_2 {
+        grid-column: 3/4;
+        width: 90%
+    }
+
+    .swiper-pagination {
+        padding-top: 40px;
+    }
+
+    .flex__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &2 {
+            display: flex;
+            width: 100%;
+        }
+    }
+
+    //Resume styles
+   .column_1 {
+       width: 25%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
+
+   
+   .resume {
+       &__footer {
+           background-color: white;
+       }
+
+       &__links--footer {
+           color: $gold;
+       }
+
+       &__links--header {
+        padding-left: 3px;
+       }
+
+       &__text, &__schools {
+           text-align: left;
+       }
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        &__item {
+            align-content: center;
+            padding-top: 15px;
+        }
+    }
+
+}

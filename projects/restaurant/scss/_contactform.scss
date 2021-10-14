@@ -1,0 +1,77 @@
+#contact {
+    background: $text-color;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.form {
+    color: black;
+    font-family: $menu-font;
+    border: 3px solid #003300;
+    border-radius: 10px;
+    padding: 20px 20px;
+
+    &__header {
+        text-decoration: underline;
+        color: $text-color;
+        background-color: #003300;
+        text-shadow: 0px 1px 1px black;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    &__entry {
+        padding: 5px;
+
+        &--textarea {
+            vertical-align: top;
+            height: 75px;
+            width: 200px;
+        }
+    }
+
+    &__input {
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    &__label {
+        font-weight: bold;
+    }
+}
+
+.submit__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.submit-btn {
+    background: #003300;
+    color: $text-color;
+    border: 1px solid #003300;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow:none;
+    padding: 10px;
+
+    &:hover {
+        background: $link-accent;
+        color: #003300;
+        border: 1px solid $text-color;
+    }
+
+    &:active {
+        transform: scale(.98);
+    }
+}
+
+.error {
+    color: red;
+    margin-left: 5px;
+}
+  
+label.error {
+    display: inline;
+}
+

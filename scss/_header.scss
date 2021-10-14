@@ -1,0 +1,27 @@
+.header {
+    background: url(../img/skyline-blur.jpg) no-repeat center;
+    background-size: cover;
+    height: 110vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 5%;
+        padding-left: 3%;
+        color: white;
+        width: 85%;
+    }
+}
+
+.nav-icon {
+    padding-left: 3%;
+
+    &__icon {
+        padding-right: 7%;
+        color: white;
+    }
+}

@@ -1,0 +1,30 @@
+.menu-wrapper {
+    padding-left: 1em;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.menu {
+    &__header {
+        text-decoration: underline;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    &__section {
+        text-transform: capitalize;
+        line-height: 1.2em;
+        margin-left: 1em;
+
+        &--sub {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+
+}
+
+.food-wrapper {
+    position: relative;
+}
+

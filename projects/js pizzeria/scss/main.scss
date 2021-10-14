@@ -1,0 +1,68 @@
+@import 'config';
+@import 'menu';
+@import 'form';
+@import "responsive";
+
+.heading {
+    height: 50vh;
+    width: 100%;
+    border-bottom: $red-border;
+    @include pizza;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+
+    &__title {
+    padding: 30px;
+    @include white-bg;
+    width: 80%;
+    }
+}
+
+.nav {
+    display: flex;
+    @include white-bg;
+    width: 60%;
+    justify-content: space-around;
+    padding: 5%;
+
+    a {
+        @include link-style;
+
+        &:hover {
+            @include link-hover;
+        }
+    }
+}
+
+main {
+    background-image: url(../img/white-brick.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+footer {
+    @include pizza;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    border-top: $red-border;
+
+    p {
+        @include white-bg;
+        width: 80%;
+    }
+
+    a {
+        @include white-bg;
+        @include link-style;
+        width: 80%;
+
+        &:hover {
+            @include link-hover;
+        }
+    }
+    
+}

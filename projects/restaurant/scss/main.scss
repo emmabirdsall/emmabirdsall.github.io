@@ -1,0 +1,247 @@
+@import 'config';
+@import 'nav';
+@import 'menu';
+@import 'contactform';
+//Media queries imported at bottom
+
+//Universal Styles
+.body-all {
+    font-family: 'Akaya Kanadaka', cursive;
+    color: $text-color;
+}
+
+.footer-all {
+    background-color: $footer-color;
+    font-family: $main-font;
+    color: $text-color;
+    height: 15vh;
+    text-align: center;
+}
+
+.header--green {
+    @include header-bg;
+}
+
+#top {
+    padding: 40px;
+}
+
+//Entry page
+.entry__body {
+    @include header-bg;
+    color: $text-color;
+    text-align: center;
+    font-family: $main-font;
+    width: 100%;
+    height: 100%;
+}
+
+.entry__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+}
+
+.flexbox-entry {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__item {
+        margin-bottom: 20px;
+        width: 95%;
+    }
+}
+
+.btn-enter {
+    width: 40%;
+    background-color: #000000;
+    border: 3px double $link-accent;
+    border-radius: 30%;
+    margin-top: 50px;
+    padding: 15px;
+    font-family: $main-font;
+
+    &:active {
+        transform: scale(0.9);
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__text {
+        color: $text-color;
+        text-decoration: none;
+    }
+}
+
+.entry__h1 {
+    font-size: 48px;
+}
+
+.entry__h3 {
+    font-size: 24px;
+}
+
+//Home Page
+
+.quip {
+    background: url(../img/cover.jpg);
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quip__text {
+    font-family: 'Tangerine', cursive;
+    font-size: 24px;
+    color: #000000;
+    background-color: $text-color;
+    border-radius: 15%;
+    opacity: 0.85;
+    width: 55%;
+    text-align: center;
+    padding: 10px;
+}
+
+.home__text {
+    background: url(../img/burnt.jpg);
+    background-size: cover;
+    min-height: 400px;
+    color: $text-color;
+    font-family: $main-font;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.home__item {
+    padding: 15px;
+}
+
+.home__disclaimer {
+    align-self: center;
+    margin-top: 60px;
+}
+
+//About Page
+.font-alt {
+    color: black;
+    width: 100%;
+}
+
+.page {
+    background-color: $text-color;
+    font-family: $alt-font;
+
+    &__wrapper {
+        border: 3px solid black;
+    }
+
+    &__link {
+        color: #336600;
+        text-decoration: none;
+
+        &:hover {
+            color: $link-accent;
+            text-decoration: underline;
+        }
+    }
+
+    &__text {
+        padding: 15px;
+        line-height: 1.2em;
+    }
+}
+
+.flex-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__icon {
+        padding: 15px;
+    }
+
+    &__header {
+        justify-self: center;
+        text-decoration: underline;
+        text-align: center;
+    }
+}
+
+.shamrock-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.photo__image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.photo__caption {
+    padding-bottom: 10px;
+    font-size: smaller;
+}
+
+.photo-alt {
+    width: 340px;
+    
+}
+
+//Song styles
+.song {
+    background: url(../img/green-subtle2.png);
+    background-size: contain;
+    padding: 20px;
+    font-family: $song-font;
+    color: white;
+
+    &__lyrics {
+    background-color: $text-color;
+    color: black;
+    border: 10px solid #003300;
+    padding: 25px;
+    }
+
+    &__chorus {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__video {
+        border: 10px solid #003300;
+        text-align: center;
+        margin: 20px;
+    }
+}
+
+//Restaurant Information Styles
+.info {
+    background-image: url("../img/burnt.jpg");
+    background-size: cover;
+    border: 3px solid black;
+    font-family: $menu-font;
+    text-align: center;
+    padding-bottom: 20px;
+
+    &__header {
+        text-decoration: underline;
+        padding: 15px;
+    }
+
+    &__map {
+        padding: 30px;
+    }
+}
+
+//Import media query styles
+@import 'media';

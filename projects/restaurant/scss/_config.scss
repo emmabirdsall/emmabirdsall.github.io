@@ -1,0 +1,58 @@
+//Import all fonts
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Josefin+Sans&display=swap');
+
+//Variables
+$text-color: #FDF5E6;
+$footer-color: #003300;
+$link-accent: #DAA520;
+$main-font: 'Akaya Kanadaka', cursive;
+$menu-font: 'Montserrat', sans-serif;
+$alt-font: 'Josefin Sans', sans-serif;
+$song-font: 'Bitter', serif;
+
+* {
+    margin: 0;
+	padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    list-style-type: none;
+}
+
+@mixin header-bg {
+    background: url("../img/green-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+@mixin top-nav {
+    background-color: #000000;
+    opacity: 0.75;
+    width: 100%;
+    height: 50px;
+    border-top-width: 7px;
+    border-bottom-width: 7px;
+    border-top-style: double;
+    border-bottom-style: double;
+    border-top-color: $link-accent;
+    border-bottom-color: $link-accent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+@mixin nav-items {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    text-decoration: none;
+    color: $text-color;
+    
+}

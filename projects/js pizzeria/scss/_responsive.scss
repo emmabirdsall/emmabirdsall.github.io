@@ -1,0 +1,52 @@
+@media only screen and (min-width: 600px) {
+  
+    .nav {
+        font-size: x-large;
+        width: 45%;
+        height: 15px;
+        margin-bottom: 10px;
+    }
+
+    .order-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        height: 30vh;
+        font-size: larger;
+
+        p{
+            width: 50%;
+        }
+
+        a {
+            width: 50%;
+        }
+    }
+
+    .menu-wrapper {
+        text-align: center;
+        font-size: larger;
+    }
+
+    .form-wrapper {
+        text-align: center;
+        font-size: larger;
+    }
+
+    .submit-btn {
+       width: 150px;
+       height: 8vh;
+    }
+
+    .order-icon1, .order-icon2, .order-icon3, .order-icon4 {
+        left: 10%;
+    }
+
+    .order-icon5, .order-icon6, .order-icon7, .order-icon8 {
+        right: 10%;
+    }
+}
+ 

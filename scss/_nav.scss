@@ -1,0 +1,85 @@
+.nav__wrapper {
+    position: relative;
+    background-color: white;
+    padding: 6vh;
+}
+
+.nav {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background: white;
+    height: 0px;
+    overflow: hidden;
+    border-radius: 25px;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        
+    }
+
+    &__item {
+        
+        display: block;
+        padding: 1.6em 5.2em;
+        border-bottom: 1px solid $gold;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $gold;
+        text-transform: uppercase;
+
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
+
+    //Toggle class
+    &--open {
+        height: auto;
+    }
+}
+
+.menu-toggle {
+    padding: 1em;
+    position: absolute;
+    right: 1em;
+    bottom: 25%;
+    cursor: pointer;
+}
+
+.hamburger {
+    @include burger-menu;
+
+    &::before {
+        @include psuedo-menu;
+        @include burger-menu;
+        transform: translateY(-6px);
+    }
+    
+    &::after {
+        @include psuedo-menu;
+        @include burger-menu;
+        transform: translateY(4px);
+    }
+
+}
+
+.open .hamburger {
+    transform: rotate(45deg);
+
+    &::before {
+        opacity: 0;
+    }
+
+    &::after {
+        transform: translateY(-2px) rotate(-90deg);
+    }
+}

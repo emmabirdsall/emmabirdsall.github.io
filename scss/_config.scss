@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+$gold: #B8A07E;
+$gray: #778899;
+
+* {
+    margin: 0;
+	padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+//Mixins for portfolio shadows
+@mixin box-shadow-parent {
+    position:relative;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+@mixin box-shadow-child {
+    position:absolute;
+    z-index:-1;
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    border-radius:100px / 10px;
+}
+
+//Mixins for burger menu
+@mixin burger-menu {
+    background: $gold;
+    height: 2px;
+    width: 1.25em;
+    border-radius: 3px;
+    transition: all ease-in-out 500ms;
+}
+
+@mixin psuedo-menu {
+    content: '';
+    display: block;
+}
+

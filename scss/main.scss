@@ -1,0 +1,95 @@
+@import 'config';
+@import 'header';
+@import 'nav';
+@import 'slideshow';
+@import 'portfolio';
+@import 'form';
+@import 'resume';
+
+
+.skills {
+    background-color: #F5F5F5;
+    padding-bottom: 20vh;
+
+    &__text {
+        color: $gray;
+        font-family: 'Amatic SC', cursive;
+        font-size: x-large;
+        font-weight: bold;
+        padding-left: 6%;
+        padding-right: 8px;
+        padding-bottom: 5%;
+        line-height: 1.2em;
+    }
+
+    &__wrapper {
+        margin-top: 10%;
+        padding-right: 2%;
+    }
+
+    &__header {
+        text-align: center;
+        padding-bottom: 10vh;
+
+    }
+}
+
+.about {
+    padding-bottom: 10vh;
+}
+
+.headshot {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 15px solid $gold;
+
+    &__wrapper {
+        padding-top: 30%;
+    }
+    
+}
+
+#get-in-touch {
+    padding-top: 15vh;
+    background-color: #F5F5F5;
+    padding-left: 3%;
+}
+
+.contact {
+    &__header {
+        text-transform: uppercase;
+        padding-bottom: 5%;
+    }
+
+    &__address {
+        font-style: normal;
+    }
+
+    &__text {
+        padding-bottom: 0.7em;
+    }
+}
+
+//Footer
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: auto;
+
+    &__item {
+        width: 40%;
+    }
+
+    &__icon {
+        padding-left: 3%;
+        color: $gray;
+    }
+}
+
+@import 'media';

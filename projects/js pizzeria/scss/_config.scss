@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+}
+
+$red-border: 5px solid red;
+
+@mixin pizza {
+    background-image: url("../img/Hawaii-black.jpg");
+    background-size: cover;
+}
+
+@mixin white-bg {
+    background-color: white;
+    opacity: 0.80;
+    align-self: center;
+    text-align: center;
+}
+
+@mixin link-style {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+@mixin link-hover {
+    color: red;
+    border: 5px dotted deeppink;
+}

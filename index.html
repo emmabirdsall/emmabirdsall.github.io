@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emma Birdsall - Front End Developer</title>
+    <link rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header id="top">
+        <div class="nav__wrapper">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#about-me">About Me</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#my-skills">Skills</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#my-portfolio">Portfolio</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#get-in-touch">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div><!--End div for menu-toggle-->
+        </div><!--End div for nav-->
+        <div class="header">
+            <h1 class="header__title">Hi! I'm Emma Birdsall</h1>
+            <h3 class="header__title">Front End Developer</h3>
+            <div class="nav-icon">
+                <ul class="nav-icon__list">
+                    <a href="https://www.linkedin.com/in/emma-l-birdsall" target="_blank" aria-label="Click to go to my LinkedIn page" title="LinkedIn">
+                    <i class="nav-icon__icon fab fa-linkedin fa-1x"></i>
+                    </a>
+                    <!--<a href="https://github.com/emmabirdsall/Portfolio.git" target="_blank" aria-label="Click to view my portfolio on GitHub">
+                    <i class="fab fa-github fa-2x"></i>
+                    </a>-->
+                    <a href="resume.html" aria-label="Click to go to my resume" title="Resume">
+                    <i class="nav-icon__icon fas fa-file-alt fa-1x"></i>
+                    </a>
+                    <a href="#get-in-touch" aria-label="Click to go to my contact information" title="Contact">
+                    <i class="nav-icon__icon fas fa-address-card fa-1x"></i>
+                    </a>
+                </ul>
+            </div><!--End div for nav icon list-->
+        </div><!--End div for header-->
+    </header>
+
+    <main id="showHere">
+        <div class="skills">
+            <article class="about" id="about-me">
+                <div class="headshot__wrapper">
+                    <img class="headshot" src="img/me.jpg" alt="A headshot of me, Emma Birdsall" aria-label="A photo of me, Emma Birdsall, in my apartment"/>
+                </div><!--End div for headshot-->
+                <div class="skills__wrapper">
+                    <p class="skills__text">After working in the legal field for seven years, I'm excited to begin a new career as a front end developer. I'm based in Cincinnati and love making designs come to life. My creativity comes from problem solving and I can't wait to grow my skills with the right company.</p>
+                    <p class="skills__text">In my spare time I love to read, practice yoga and snuggle with my cats. I also enjoy exploring new restaurants and everything else Cincinnati has to offer with my husband.</p>
+                    <p class="skills__text">Although I'm new to development, I have a solid foundation and an eagerness to learn that make me an asset for any team.</p>
+                </div> <!--End div for about section-->   
+            </article>
+
+            <!--Begin Slideshow Code-->
+            <article class="swiper" id="my-skills">
+                <h2 class="skills__header">Skills</h2>
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <i class="fas fa-desktop fa-3x swiper-icon"></i>
+                        <h3 class="slides__title">HTML & CSS</h3>
+                        <p class="slides__text">Use semantic HTML5 and CSS3 with mobile first design to create responsive web pages. </p>
+                    </li>
+                    <li class="swiper-slide">
+                        <i class="far fa-keyboard fa-3x swiper-icon"></i>
+                        <h3 class="slides__title">JavaScript & jQuery</h3>
+                        <p class="slides__text">Use ES6 to access and display JSON objects and validate forms.</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <i class="far fa-file-code fa-3x swiper-icon"></i>
+                        <h3 class="slides__title">React</h3>
+                        <p class="slides__text">Use ES6 and APIs to develop relevant applications  with user experience in mind.</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <i class="fas fa-palette fa-3x swiper-icon"></i>
+                        <h3 class="slides__title">SCSS</h3>
+                         <p class="slides__text">Use SCSS to design pages using shortcuts, mixins and variables.</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <i class="fas fa-universal-access fa-3x swiper-icon"></i>
+                        <h3 class="slides__title">Accessibility</h3>
+                        <p class="slides__text">Follow WCAG and use WAI-ARIA to create accesible pages.</p>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div><!--End div for slider pagination-->
+            </article>
+            <!--End slideshow code-->
+        </div><!--End div for about and skills section-->
+       
+        <article class="portfolio" id="my-portfolio">
+            <h1 class="portfolio__header">Portfolio</h1>
+            <div class="flex__container">
+                <section class="box-wrapper">
+                    <a href="projects/restaurant/index.html" target="_blank" class="video-link">
+                        <video class="box-wrapper__video" autoplay muted loop>
+                            <source src="img/molly malone.mp4" type="video/mp4">
+                        Your broswer does not support the video tag.
+                        </video>
+                    </a>
+                    <p class="box-wrapper__text">
+                        Responsive multi-page site inspired by a local Irish restaurant. Built using HTML, CSS and jQuery. Designed mobile first using SCSS, including ARIA attributes to conform to WCAG.
+                    </p>
+                </section>
+    
+                <section class="box-wrapper">
+                    <a href="projects/js pizzeria/index.html" target="_blank" class="video-link">
+                        <video class="box-wrapper__video" autoplay muted loop>
+                            <source src="img/javascript pizzeria.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                          </video>
+                    </a>
+                    <p class="box-wrapper__text box-wrapper__text-alt">
+                        Import and display JSON menu. Use jQuery to display menu as order form and store order in local storage on submit. A display order button will show the user their submitted order.
+                    </p>
+                </section>
+    
+                <section class="box-wrapper box-wrapper--last">
+                    <a href="projects/adoptable-v1/build/index.html" target="_blank" class="video-link">
+                        <video class="box-wrapper__video" autoplay muted loop>
+                            <source src="img/adoptable.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                          </video>
+                    </a>
+                    <p class="box-wrapper__text">
+                        Adoptable was built using React and the Petfinder API. The user inputs location data and the app will return the adoptable animals in their area.
+                    </p>
+                </section>
+            </div><!--End div flex container--> 
+        </article>
+
+        <article id="get-in-touch">
+            <section class="contact item_1">
+                <h2 class="contact__header" aria-label="Contact Me section">Get In Touch</h2>
+                <address class="contact__address">
+                    <p class="contact__text">Emma Birdsall</p>
+                    <p class="contact__text">Cell Phone: (513) 479-9215</p>
+                    <p class="contact__text"><a href="mailto:birdsallemma@gmail.com" aria-label="Click to email me">birdsallemma@gmail.com</a></p>
+                </address>
+            </section>
+            <form action="" method="" class="form1 item_2" id="form">
+                <fieldset class="form1__wrapper">
+                    <label class="form1__label"><input type="text" name="fullname" placeholder="NAME" class="form1__input" id="name" /></label>
+                    <label class="form1__label"><input type="text" name="email" placeholder="EMAIL" class="form1__input" id="email"/></label>
+                    <label class="form1__label"><input type="text" name="subject" placeholder="SUBJECT" class="form1__input" id="subject" /></label>
+                    <label class="form1__label"><textarea name="message" cols="30" rows="10" placeholder="MESSAGE" class="form1__input" id="message"></textarea></label>
+                    <label class="form1__label"><input type="submit" name="submit-btn" value="Send Message" class="form1__button" id="submit" /></label>
+                    <label id="info"></label>
+                </fieldset>
+            </form>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__item">
+            <a href="https://www.linkedin.com/in/emma-l-birdsall" target="_blank" aria-label="Click to go to my LinkedIn page" class="footer__icon">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="resume.html" aria-label="Click to go to my resume" class="footer__icon">
+                <i class="fas fa-file-alt fa-2x"></i>
+            </a>
+            <a href="#top" aria-label="Click to go back to the top" class="footer__icon">
+                <i class="fas fa-arrow-up fa-2x"></i>
+            </a>
+        </div><!--End div for footer icons-->
+        <small class="footer__item">&#169; Built by Emma Birdsall</small>
+    </footer>
+    
+    
+    <!--Script if CDN fails, to load local jQuery-->
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-3.6.0.js"><\/script>')
+    </script>
+
+    <!--Script if CDN fails, to load local jQuery UI-->
+    <script>
+        window.jQuery.ui || document.write('<script src="js/jquery-ui.min.js"><\/script>')
+    </script>
+
+    <!--JS File-->
+    <script src="js/script.js"></script>
+
+    <!--Load script for slideshow-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    
+    <!--Script for font awesome icons-->
+    <script src="https://kit.fontawesome.com/f52d19676e.js" crossorigin="anonymous"></script>
+</body>
+</html>

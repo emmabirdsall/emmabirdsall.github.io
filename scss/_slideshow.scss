@@ -1,0 +1,53 @@
+.swiper {
+    width: 93%;
+
+    &-wrapper {
+        list-style: none;
+        padding-left: 3%;
+        //padding-right: 6px;
+    }
+
+    &-icon {
+        color: $gold;
+    }
+}
+
+//Style for pagination bullets
+.swiper-pagination {
+    position: static;
+    padding-top: 20px;
+
+    &-bullet {
+        background-color: white;
+        border:solid 2px $gold;
+        margin:.75em;
+        border-radius: 300px;
+        width: .75em;
+        height: .75em;
+        text-indent: -9999px;
+        transition:all .3s ease-in;
+        opacity: 1;
+    
+        &:hover {
+            border-color:$gold;
+            background-color: $gold;
+        }
+        
+        &-active {
+        background-color: $gold;
+        border:solid 2px $gold;
+        --swiper-theme-color: $gold;
+        }
+    }
+}
+
+
+//Styles for text of slideshow
+.slides__title {
+    margin-top: 3%;
+}
+
+.slides__text {
+    color: $gray;
+    margin-top: 3%;
+}

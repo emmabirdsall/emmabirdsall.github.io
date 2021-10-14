@@ -1,0 +1,75 @@
+.resume {
+    background-color: $gold;
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+
+    &__header {
+        text-align: center;
+        padding-bottom: 20px;
+
+        &--alt {
+            border: 2px solid white;
+            padding: 5px;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__wrapper {
+        margin-top: 20px;
+    }
+
+    &__text {
+        padding-top: 10px;
+    }
+
+    &__list {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    &__footer {
+        background-color: $gold;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__links {
+        padding: 20px;
+        color: white;
+        text-decoration: none;
+        
+        &:hover {
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.contact__address, .resume__list, .resume__wrapper--alt {
+    padding: 20px;
+}
+
+//Work section
+
+#work {
+    padding-top: 15vh;
+}
+
+.work__header {
+    border: 2px solid $gold;
+    padding: 5px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jobs {
+    padding: 20px 20px 0px 20px;
+    margin-bottom: 20px;
+
+    &__header {
+        margin-bottom: 5px;
+    }
+}

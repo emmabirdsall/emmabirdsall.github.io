@@ -1,0 +1,38 @@
+.header__nav {
+    @include top-nav;
+}
+
+.nav__link {
+    @include nav-items;
+    
+    &:hover {
+        transform: scale(1.2);
+        text-decoration: underline;
+        color: $link-accent;
+    }
+}
+
+.active-link {
+    color: $link-accent;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.menu__nav {
+    @include top-nav;
+}
+
+.menu__link {
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $link-accent;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molly Malone's Contact Us</title>
+    <meta name="description" content="Contact Us page for Molly Malone's" />
+    <meta name="author" content="Emma Birdsall" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="body-all">
+    <header class="header--green">
+        <h1 id="top">Contact Us</h1>
+        <nav aria-label="Main">
+            <ul class="header__nav">
+                <li>
+                    <a href="home.html" class="nav__link">Home</a>
+                </li>
+                <li>
+                    <a href="menu.html" class="nav__link">Menu</a>
+                </li>
+                <li>
+                    <a href="about.html" class="nav__link">About</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="active-link nav__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="info">
+            <h2 class="info__header">Restaurant Information</h2>
+               <h3 class="info__header">Hours</h3>
+                   <p>Mondays - Thursdays:</b> 12pm - 11pm</p>
+                   <p>Fridays &amp; Saturdays:</b> 12pm - 1am</p>
+                   <p>Sundays:</b> 11am - 11pm</p>
+               <h3 class="info__header"> Address</h3>
+                   <p>112 E. Fourth Street</p>
+                   <p>Covington, KY 41011</p>
+               <h3 class="info__header">Phone &amp; Email</h3>
+                   <p>Phone: (859) 111-2233</p>
+                   <p>Email: <a href="mailto:mollymalones@example.com" class="page__link">mollymalones@example.com</a></p>
+                   <p>You can also use the form <a href="#contact" class="page__link">below</a> to contact us.</p>
+                <iframe class="info__map" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJdYf0gzixQYgRXCrsw4OOpqA&key=AIzaSyBa4lQDMYtNbLyr_0GZxn7zLszMBUbbj-A"></iframe>
+        </article>
+
+        <article id="contact">
+            <form action="" method="post" id="contact_form" aria-label="Contact us form">
+                <fieldset class="form">
+                    <legend class="form__header">Contact Us</legend>
+                    <div class="form__entry">
+                        <label class="form__label">Name:</b></label>
+                        <input type="text" name="full-name" class="form__input" id="cust_name">
+                    </div>
+                    <div class="form__entry">
+                        <span class="form__label">Preferred Method:</span>
+                        <input id="phone" type="radio" name="pref_contact" value="phone" class="form__input" />
+                        <label for="phone" class="form__label">Phone</label>
+                        <input id="email" type="radio" name="pref_contact" value="email" class="form__input" />
+                        <label for="email" class="form__label">Email</label>
+                        <span id="prefer_contact"></span>
+                    </div>
+                    <div class="form__entry">
+                        <label class="form__label">Phone Number:</b></label>
+                        <input type="tel" name="phone" class="form__input">
+                        <span id="phone_num"></span>
+                    </div>
+                    <div class="form__entry">
+                        <label class="form__label">Email Address:</b></label>
+                        <input type="email" name="email" class="form__input" id="email_address">
+                        <span id="email_add"></span>
+                    </div>
+                    <div class="form__entry">
+                        <label class="form__label">Comments:</b></label>
+                        <textarea name="comments" placeholder="Enter your comments..." class="form__entry--textarea" id="cust_comments"></textarea>
+                    </div>
+                    <div class="form__entry submit__wrapper">
+                        <input type="submit" name="submit" value="Submit" class="submit-btn"/>
+                    </div>
+                </fieldset>
+            </form>
+        </article>
+    </main>
+
+    <footer class="footer-all">
+        <nav aria-label="Footer">
+            <ul class="footer__nav"> 
+                <li>
+                    <a href="home.html" class="nav__link">Home</a>
+                </li>
+                <li>
+                    <a href="menu.html" class="nav__link">Menu</a>
+                </li>
+                <li>
+                    <a href="about.html" class="nav__link">About</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="active-link nav__link">Contact</a>
+                </li>
+                <li>
+                    <a href="#top" class="nav__link">Top</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <!--Script to load jQuery from CDN-->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <!--Script to load local jQuery if CDN fails-->
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-3.6.0.js"><\/script>')
+    </script>
+    <!--JS file-->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+    
+
+    
+    
+
+    
