@@ -199,6 +199,7 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  margin-bottom: 10vh;
 }
 
 .box-wrapper {
@@ -238,7 +239,7 @@
 }
 
 .box-wrapper--last {
-  padding-bottom: 10vh;
+  padding-bottom: 15px;
 }
 
 .video-link {
