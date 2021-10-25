@@ -18,7 +18,14 @@
 }
 
 .nav-icon {
-    padding-left: 3%;
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+        padding-left: 3%;
+    }
 
     &__icon {
         padding-right: 7%;

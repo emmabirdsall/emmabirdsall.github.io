@@ -28,18 +28,26 @@
             <h3 class="header__title">Front End Developer</h3>
             <div class="nav-icon">
                 <ul class="nav-icon__list">
-                    <a href="https://www.linkedin.com/in/emma-l-birdsall" target="_blank" aria-label="Click to go to my LinkedIn page" title="LinkedIn">
-                    <i class="nav-icon__icon fab fa-linkedin fa-1x"></i>
-                    </a>
-                    <!--<a href="https://github.com/emmabirdsall/Portfolio.git" target="_blank" aria-label="Click to view my portfolio on GitHub">
-                    <i class="fab fa-github fa-2x"></i>
-                    </a>-->
-                    <a href="resume.html" aria-label="Click to go to my resume" title="Resume">
-                    <i class="nav-icon__icon fas fa-file-alt fa-1x"></i>
-                    </a>
-                    <a href="#get-in-touch" aria-label="Click to go to my contact information" title="Contact">
-                    <i class="nav-icon__icon fas fa-address-card fa-1x"></i>
-                    </a>
+                    <li class="hav-icon__item">
+                        <a href="https://www.linkedin.com/in/emma-l-birdsall" target="_blank" aria-label="Click to go to my LinkedIn page" title="LinkedIn">
+                            <i class="nav-icon__icon fab fa-linkedin fa-1x"></i>
+                        </a>
+                    </li>
+                    <li class="hav-icon__item">
+                        <a href="https://github.com/emmabirdsall" target="_blank" aria-label="Click to view my portfolio on GitHub">
+                        <i class="nav-icon__icon fab fa-github fa-1x"></i>
+                        </a>
+                    </li>
+                    <li class="hav-icon__item">
+                        <a href="resume.html" aria-label="Click to go to my resume" title="Resume">
+                            <i class="nav-icon__icon fas fa-file-alt fa-1x"></i>
+                        </a>
+                    </li>
+                    <li class="hav-icon__item">
+                        <a href="#get-in-touch" aria-label="Click to go to my contact information" title="Contact">
+                            <i class="nav-icon__icon fas fa-address-card fa-1x"></i>
+                        </a>
+                    </li>
                 </ul>
             </div><!--End div for nav icon list-->
         </div><!--End div for header-->
@@ -99,29 +107,29 @@
                 <section class="box-wrapper">
                     <a href="projects/restaurant/index.html" target="_blank" class="video-link">
                         <video class="box-wrapper__video" autoplay muted loop>
-                            <source src="img/molly malone.mp4" type="video/mp4">
+                            <source src="img/molly-malone.mp4" type="video/mp4">
                         Your broswer does not support the video tag.
                         </video>
                     </a>
                     <div class="box-wrapper__text">
-                        <p>Responsive multi-page site inspired by a local Irish restaurant. Built using HTML, CSS and jQuery. Designed mobile first using SCSS, including ARIA attributes to conform to WCAG.
+                        <p class="portfolio-description">Responsive multi-page site inspired by a local Irish restaurant. Built using HTML, CSS and jQuery. Designed mobile first using SCSS, including ARIA attributes to conform to WCAG.
                         </p>
-                        <p>View <a href="https://github.com/emmabirdsall/emmabirdsall.github.io/tree/main/projects/restaurant">code</a>.</p>
-                    </div>
+                        <p class="portfolio-description">View <a class="portfolio-link" href="https://github.com/emmabirdsall/emmabirdsall.github.io/tree/main/projects/restaurant">code</a>.</p>
+                    </div><!--End div for text of restaurant project-->
                 </section>
     
                 <section class="box-wrapper">
-                    <a href="projects/js pizzeria/index.html" target="_blank" class="video-link">
+                    <a href="projects/js-pizzeria/index.html" target="_blank" class="video-link">
                         <video class="box-wrapper__video" autoplay muted loop>
-                            <source src="img/javascript pizzeria.mp4" type="video/mp4">
+                            <source src="img/javascript-pizzeria.mp4" type="video/mp4">
                           Your browser does not support the video tag.
                           </video>
                     </a>
                     <div class="box-wrapper__text box-wrapper__text-alt">
-                       <p>Import and display JSON menu. Use jQuery to display menu as order form and store order in local storage on submit. A display order button will show the user their submitted order.
+                       <p class="portfolio-description">Import and display JSON menu. Use jQuery to display menu as order form and store order in local storage on submit. A display order button will show the user their submitted order.
                        </p> 
-                       <p>View <a href="https://github.com/emmabirdsall/emmabirdsall.github.io/tree/main/projects/js%20pizzeria">code</a>.</p>
-                    </div>
+                       <p class="portfolio-description">View <a class="portfolio-link" href="https://github.com/emmabirdsall/emmabirdsall.github.io/tree/main/projects/js%20pizzeria">code</a>.</p>
+                    </div><!--End div for text of js project-->
                 </section>
     
                 <section class="box-wrapper box-wrapper--last">
@@ -132,9 +140,9 @@
                           </video>
                     </a>
                     <div class="box-wrapper__text">
-                        <p></p>Adoptable was built using React and the Petfinder API. The user inputs location data and the app will return the adoptable animals in their area.</p>
-                        <p>View <a href="https://github.com/emmabirdsall/adoptable.git">code</a>.</p>
-                    </div>
+                        <p class="portfolio-description">Adoptable was built using React and the Petfinder API. The user inputs location data and the app will return the adoptable animals in their area.</p>
+                        <p class="portfolio-description">View <a class="portfolio-link" href="https://github.com/emmabirdsall/adoptable.git">code</a>.</p>
+                    </div><!--End div for text of adoptable-->
                 </section>
             </div><!--End div flex container--> 
         </article>
@@ -148,7 +156,7 @@
                     <p class="contact__text"><a href="mailto:birdsallemma@gmail.com" aria-label="Click to email me">birdsallemma@gmail.com</a></p>
                 </address>
             </section>
-            <form action="" method="" class="form1 item_2" id="form">
+            <form action="" method="POST" class="form1 item_2" id="form">
                 <fieldset class="form1__wrapper">
                     <label class="form1__label"><input type="text" name="fullname" placeholder="NAME" class="form1__input" id="name" /></label>
                     <label class="form1__label"><input type="text" name="email" placeholder="EMAIL" class="form1__input" id="email"/></label>

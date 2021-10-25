@@ -7,6 +7,22 @@
         text-transform: uppercase;
         padding-bottom: 20vh;
     }
+
+    &-description {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    &-link {
+        color: $gold;
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+            color: black;
+            text-decoration: underline;
+        }
+    }
 }
 
 .flex__container {

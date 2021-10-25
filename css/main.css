@@ -28,7 +28,11 @@
   width: 85%;
 }
 
-.nav-icon {
+.nav-icon__list {
+  list-style-type: none;
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
   padding-left: 3%;
 }
 
@@ -192,6 +196,22 @@
 .portfolio__header {
   text-transform: uppercase;
   padding-bottom: 20vh;
+}
+
+.portfolio-description {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.portfolio-link {
+  color: #B8A07E;
+  text-decoration: none;
+}
+
+.portfolio-link:hover {
+  cursor: pointer;
+  color: black;
+  text-decoration: underline;
 }
 
 .flex__container {
