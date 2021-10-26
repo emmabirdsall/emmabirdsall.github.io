@@ -55,7 +55,7 @@ $(function() {
         if(validate()) {
             $.ajax({
             type: "POST",
-            url: "../php/mailer.php",
+            url: "php/mailer.php",
             data: form.serialize(),
             dataType: "json"
         }).done(function(data) {
