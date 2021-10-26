@@ -37,6 +37,7 @@ $(function() {
     });
 
     //Contact Form function and validation
+    /*
     var form = $('#form'),
     email = $('#email'),
     name = $('#name'),
@@ -49,7 +50,7 @@ $(function() {
         $(this).css('border-color', '');
         info.html('').slideUp();
     });
-    /*
+    
     submit.on('click', function(e) {
         e.preventDefault();
         if(validate()) {
@@ -71,7 +72,7 @@ $(function() {
         });
         } 
     });
-    */
+    
     function validate() {
         var valid = true;
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -95,5 +96,6 @@ $(function() {
   
         return valid;
     }
+    */
       
 });//Closure for jQuery initialization
