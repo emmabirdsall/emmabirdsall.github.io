@@ -49,7 +49,7 @@ $(function() {
         $(this).css('border-color', '');
         info.html('').slideUp();
     });
-
+    /*
     submit.on('click', function(e) {
         e.preventDefault();
         if(validate()) {
@@ -71,7 +71,7 @@ $(function() {
         });
         } 
     });
-
+    */
     function validate() {
         var valid = true;
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
