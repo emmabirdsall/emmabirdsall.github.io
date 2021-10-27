@@ -192,8 +192,15 @@
 
     <!--Script if CDN fails, to load local jQuery UI-->
     <script>
-        window.jQuery.ui || document.write('<script src="js/jquery-ui.min.js"><\/script>')
+        window.jQuery.ui || document.write('<script src="js/jquery.validate.min.js"><\/script>')
     </script>
+
+    <!--Script if CDN fials, to load local jQuery Form Validation Plugin-->
+    <script>
+        window.jQuery.validator || document.write('<script src="js/jquery-ui.min.js"><\/script>')
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>-->
+    
 
     <!--JS File-->
     <script src="js/script.js"></script>

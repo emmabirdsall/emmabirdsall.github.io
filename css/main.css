@@ -305,6 +305,10 @@
   cursor: pointer;
 }
 
+form .error {
+  color: #ff0000;
+}
+
 .resume {
   background-color: #B8A07E;
   text-align: center;
