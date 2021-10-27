@@ -56,14 +56,14 @@
     <main id="showHere">
         <div class="skills">
             <article class="about" id="about-me">
-                <div class="headshot__wrapper">
+                <section class="headshot__wrapper">
                     <img class="headshot" src="img/me.jpg" alt="A headshot of me, Emma Birdsall" aria-label="A photo of me, Emma Birdsall, in my apartment"/>
-                </div><!--End div for headshot-->
-                <div class="skills__wrapper">
+                </section><!--End div for headshot-->
+                <section class="skills__wrapper">
                     <p class="skills__text">After working in the legal field for seven years, I'm excited to begin a new career as a front end developer. I love the challenge of making designs come to life. My creativity comes from problem solving and I can't wait to grow my skills with the right company.</p>
                     <p class="skills__text">I'm based in Cincinnati with plans to move to Milwaukee permanently in early 2022. In my spare time I love to read, practice yoga and snuggle with my cats. I also enjoy exploring new restaurants and everything else Cincinnati has to offer with my husband.</p>
                     <p class="skills__text">Although I'm new to development, I have a solid foundation and an eagerness to learn that make me an asset for any team.</p>
-                </div> <!--End div for about section-->   
+                </section> 
             </article>
 
             <!--Begin Slideshow Code-->
@@ -105,7 +105,7 @@
             <h1 class="portfolio__header">Portfolio</h1>
             <div class="flex__container">
                 <section class="box-wrapper">
-                    <a href="projects/restaurant/index.html" target="_blank" class="video-link">
+                    <a href="projects/restaurant/index.html" target="_blank" class="video-link" aria-label="Click to view my restaurant website">
                         <video class="box-wrapper__video" playsinline autoplay muted loop>
                             <source src="img/molly-malone.mp4" type="video/mp4">
                         Your broswer does not support the video tag.
@@ -114,12 +114,12 @@
                     <div class="box-wrapper__text">
                         <p class="portfolio-description">Responsive multi-page site inspired by a local Irish restaurant. Built using HTML, CSS and jQuery. Designed mobile first using SCSS, including ARIA attributes to conform to WCAG.
                         </p>
-                        <p class="portfolio-description">View <a class="portfolio-link" href="https://github.com/emmabirdsall/emmabirdsall.github.io/tree/main/projects/restaurant" target="_blank">code</a>.</p>
+                        <p class="portfolio-description">View <a class="portfolio-link" href="https://github.com/emmabirdsall/emmabirdsall.github.io/tree/main/projects/restaurant" target="_blank" aria-label="Click to view the code for my restaurant website">code</a>.</p>
                     </div><!--End div for text of restaurant project-->
                 </section>
     
                 <section class="box-wrapper">
-                    <a href="projects/js-pizzeria/index.html" target="_blank" class="video-link">
+                    <a href="projects/js-pizzeria/index.html" target="_blank" class="video-link" aria-label="Click to view my JavaScript project">
                         <video class="box-wrapper__video" playsinline autoplay muted loop>
                             <source src="img/javascript-pizzeria.mp4" type="video/mp4">
                           Your browser does not support the video tag.
@@ -128,12 +128,12 @@
                     <div class="box-wrapper__text box-wrapper__text-alt">
                        <p class="portfolio-description">Import and display JSON menu. Use jQuery to display menu as order form and store order in local storage on submit. A display order button will show the user their submitted order.
                        </p> 
-                       <p class="portfolio-description">View <a class="portfolio-link" href="https://github.com/emmabirdsall/emmabirdsall.github.io/tree/main/projects/js-pizzeria" target="_blank">code</a>.</p>
+                       <p class="portfolio-description">View <a class="portfolio-link" href="https://github.com/emmabirdsall/emmabirdsall.github.io/tree/main/projects/js-pizzeria" target="_blank" aria-label="Click to view the code for my JavaScript project">code</a>.</p>
                     </div><!--End div for text of js project-->
                 </section>
     
                 <section class="box-wrapper box-wrapper--last">
-                    <a href="https://emmabirdsall.github.io/adoptable" target="_blank" class="video-link">
+                    <a href="https://emmabirdsall.github.io/adoptable" target="_blank" class="video-link" aria-label="Click to view my Adoptable app">
                         <video class="box-wrapper__video" playsinline autoplay muted loop>
                             <source src="img/adoptable.mp4" type="video/mp4">
                           Your browser does not support the video tag.
@@ -141,7 +141,7 @@
                     </a>
                     <div class="box-wrapper__text">
                         <p class="portfolio-description">Adoptable was built using React and the Petfinder API. The user inputs location data and the app will return the adoptable animals in their area.</p>
-                        <p class="portfolio-description">View <a class="portfolio-link" href="https://github.com/emmabirdsall/adoptable.git" target="_blank">code</a>.</p>
+                        <p class="portfolio-description">View <a class="portfolio-link" href="https://github.com/emmabirdsall/adoptable.git" target="_blank" aria-label="Click to view the code for my Adoptable app">code</a>.</p>
                     </div><!--End div for text of adoptable-->
                 </section>
             </div><!--End div flex container--> 
@@ -156,7 +156,7 @@
                     <p class="contact__text"><a href="mailto:birdsallemma@gmail.com" aria-label="Click to email me">birdsallemma@gmail.com</a></p>
                 </address>
             </section>
-            <form action="" method="POST" class="form1 item_2" id="form" data-netlify="true" name="contact">
+            <form action="" method="POST" class="form1 item_2" id="form" data-netlify="true" name="contact" aria-label="Contact Form">
                 <fieldset class="form1__wrapper">
                     <label class="form1__label"><input type="text" name="fullname" placeholder="NAME" class="form1__input" id="name" /></label>
                     <label class="form1__label"><input type="text" name="email" placeholder="EMAIL" class="form1__input" id="email"/></label>
