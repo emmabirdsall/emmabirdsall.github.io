@@ -262,8 +262,32 @@
   padding-bottom: 15px;
 }
 
+.box-wrapper__header {
+  text-decoration: underline;
+  margin-bottom: 5%;
+  padding-top: 2%;
+}
+
 .video-link {
   height: 315px;
+}
+
+.box--alt {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+.current-project {
+  width: 60%;
+  padding: 10px;
+  background-color: #F5F5F5;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.current-project__text {
+  padding-bottom: 2%;
 }
 
 .form1 {
