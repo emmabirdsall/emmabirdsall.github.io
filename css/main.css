@@ -487,6 +487,34 @@ form .error {
   color: #778899;
 }
 
+#topBtn {
+  display: inline-block;
+  background-color: #B8A07E;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 30px;
+  position: fixed;
+  bottom: 25px;
+  right: 15px;
+  transition: background-color .3s;
+  z-index: 1000;
+}
+
+#topBtn:hover {
+  cursor: pointer;
+  background-color: #778899;
+}
+
+#topBtn:active {
+  background-color: darkgrey;
+}
+
+.fa-angle-double-up {
+  color: white;
+}
+
 @media only screen and (min-width: 481px) and (max-width: 600px) {
   .header__title {
     margin-bottom: 3%;
